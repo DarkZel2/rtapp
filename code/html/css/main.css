@@ -20,7 +20,7 @@ header {
     width: 280px;
     height: 200px;
 }
-
+/*Configuracion del menu lateral*/
 .abrir-menu, .cerrar-menu {
     border: 0;
     background-color: transparent;
@@ -70,7 +70,7 @@ header {
 .nav-list li a:hover {
     background-color: #f4ea8f;
 }
-
+/*Div y configuracion de los botones carrito y sesion*/
 .botones {
     height: 200px;
     width: 220px;
@@ -117,7 +117,7 @@ header {
     color: #ffffff;
     transform: translateY(-7px);
 }
-
+/*Barra de busqueda y categorias*/
 .categ {
     background-color: #FFF14F;
     margin: 30px;
@@ -149,7 +149,7 @@ header {
     font-size: 2em;
     font-family: 'Caveat Brush';
 }
-
+/*Main y productos por categoria*/
 main {
     height: auto;
     display: flex;
@@ -297,7 +297,7 @@ main {
     background-color: #175A00;
     color: #ffffff;
 }
-
+/*Footer e informacion*/
 footer {
     background-color: #FFF14F;
     display: flex;
@@ -340,7 +340,7 @@ footer .contacto, footer .redes {
 .redes {
     font-size: 1.5em;
 }
-
+/*Configuracion del boton flotante, no mover por favor*/
 .btn-flotante {
 	font-size: 2em; /* Cambiar el tamaño de la tipografia */
 	color: #000; /* Color del texto */

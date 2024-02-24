@@ -4,7 +4,7 @@
     padding: 0;
     top: 0;
 }
-
+/*Estilos de las equis*/
 .xi {
     float: left;
     width: 50%;
@@ -204,7 +204,7 @@
 .info a:hover {
     color: #000;
 }
-
+/*Configuracion del div movible*/
 .conten1.invisible {
     display: none;
 }
