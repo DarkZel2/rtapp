@@ -1,0 +1,674 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 30px;
+}
+
+.menu {
+    height: 200px;
+    width: 220px;
+    float: left;
+    display: flex;
+    align-items: start;
+}
+
+.logo {
+    width: 280px;
+    height: 200px;
+}
+
+.abrir-menu, .cerrar-menu {
+    border: 0;
+    background-color: transparent;
+    font-size: 2.5em;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: start;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: #FFF6A9;
+    padding: 30px;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+    gap: 1em;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5em;
+    font-family: 'Caveat Brush';
+}
+
+.nav-list li a:hover {
+    background-color: #f4ea8f;
+}
+
+.botones {
+    height: 200px;
+    width: 220px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito {
+    border: none;
+    background-color: #F5E62D;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 300ms ease 0ms;
+}
+
+.carrito:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+.inicio {
+    background-color: #F5E62D;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush';
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
+}
+
+.inicio:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+.categ {
+    background-color: #FFF14F;
+    margin: 30px;
+    height: 60px;
+    display: flex;
+    padding:10px 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+}
+
+.categ select {
+    background-color: #FFF14F;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 2em;
+    float: left;
+    font-family: 'Caveat Brush';
+    cursor: pointer;
+}
+
+.categ input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 300px;
+    float: right;
+    font-size: 2em;
+    font-family: 'Caveat Brush';
+}
+
+main {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.head-art {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.main-art {
+    padding: 0;
+    height: 20px;
+}
+
+.foot-art {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: transparent;
+}
+
+.panaderia, .pasteleria, .tostados, .galleteria {
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 1em;
+    transition: all 300ms ease 0ms;
+}
+
+.panaderia:hover, .pasteleria:hover, .tostados:hover, .galleteria:hover {
+    transform: translateY(-7px);
+}
+
+.img-panaderia, .img-pasteleria, .img-tostados, .img-galleteria {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.panaderia i, .pasteleria i, .tostados i, .galleteria i {
+    font-size: 2em;
+    float: right;
+    cursor: pointer;
+}
+
+.panaderia section, .pasteleria section, .tostados section, .galleteria section {
+    margin: 10px;
+    box-sizing: border-box;
+    width: 280px;
+    height: 180px;
+}
+
+.panaderia p, .pasteleria p, .tostados p, .galleteria p {
+    font-size: 1em;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.panaderia h2, .panaderia h4 {
+    color: #0C556D;
+    font-size: 1.2em;
+}
+
+.pasteleria h2, .pasteleria h4 {
+    color: #960F1B;
+    font-size: 1.2em;
+}
+
+.tostados h2, .tostados h4 {
+    color: #7F4305;
+    font-size: 1.2em;
+}
+
+.galleteria h2, .galleteria h4 {
+    color: #175A00;
+    font-size: 1.2em;
+}
+
+.panaderia button, .pasteleria button, .tostados button, .galleteria button {
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush';
+    float: right;
+    width: 100px;
+    height: 30px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.panaderia {
+    background-color: #B2E2F2;
+}
+
+.panaderia button {
+    background-color: #009BCF;
+}
+
+.panaderia button:hover {
+    background-color: #0C556D;
+    color: #ffffff;
+}
+
+.pasteleria {
+    background-color: #FFB0B7;
+}
+
+.pasteleria button {
+    background-color: #FF162A;
+}
+
+.pasteleria button:hover {
+    background-color: #960F1B;
+    color: #ffffff;
+}
+
+.tostados {
+    background-color: #FFC78D;
+}
+
+.tostados button {
+    background-color: #FF8100;
+}
+
+.tostados button:hover {
+    background-color: #7F4305;
+    color: #ffffff;
+}
+
+.galleteria {
+    background-color: #ABFF8D;
+}
+
+.galleteria button {
+    background-color: #37D200;
+}
+
+.galleteria button:hover {
+    background-color: #175A00;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #FFF14F;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    transition: all 200ms ease 0ms;
+}
+
+footer p, a {
+    font-size: 1.2em;
+    color: #5E5E5E;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+footer p a {
+    font-size: 1em;
+    color: #5E5E5E;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+footer h4 {
+    font-size: 1.8em;
+    color: #5E5E5E;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+footer .contacto, footer .redes {
+    display: inline-block;
+    text-align: center;
+}
+
+.redes {
+    font-size: 1.5em;
+}
+
+.btn-flotante {
+	font-size: 2em; /* Cambiar el tamaño de la tipografia */
+	color: #000; /* Color del texto */
+	border-radius: 10px; /* Borde del boton */
+	background-color: #F5E62D; /* Color de fondo */
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	z-index: 99;
+    display: none;
+}
+.btn-flotante:hover {
+	background-color: #F90303; /* Color de fondo al pasar el cursor */
+    color: #ffffff;
+	transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+
+@media (max-width: 1300px) {
+    main {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    main {
+        margin: 30px;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .menu {
+        width: 160px;
+    }
+
+    .logo {
+        width: 220px;
+        height: 180px;
+    }
+
+    .botones {
+        width: 160px;
+    }
+
+    .carrito {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .inicio {
+        height: 45px;
+        width: 110px;
+        font-size: 1.2em;
+    }
+
+    .categ {
+        height: 50px;
+        padding: 5px 10px;
+    }
+
+    main {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    footer a, footer p {
+        font-size: 1.1em;
+    }
+
+    footer h4 {
+        font-size: 1.4em;
+    }
+
+    .horario {
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    header {
+        margin: 25px;
+    }
+
+    .menu {
+        width: 180px;
+        height: 160px;
+    }
+
+    .logo {
+        height: 160px;
+        width: 180px;
+    }
+
+    .botones {
+        height: 160px;
+        width: 180px;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+    .inicio {
+        height: 40px;
+        width: 130px;
+        font-size: 1.3em;
+    }
+
+    .btn-flotante {
+        display: block;
+    }
+
+    .nav {
+        width: 300px;
+        padding: 25px;
+        gap: 0.4em;
+    }
+
+    .nav-list {
+        gap: 0.4em;
+    }
+
+    .nav-list li a {
+        font-size: 2.2em;
+    }
+
+    .categ {
+        height: 50px;
+        margin: 25px;
+        padding: 7.5px 12.5px;
+    }
+
+    .categ select {
+        font-size: 1.8em;
+    }
+
+    .categ input {
+        font-size: 1.8em;
+        padding: 7.5px 12.5px;
+    }
+
+    main {
+        margin: 35px;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer .horario, footer .contacto {
+        text-align: center;
+    }
+
+    footer p, a {
+        font-size: 1em;
+    }
+
+    footer h4 {
+        font-size: 1.2em;
+    }
+
+    .redes {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        margin: 20px;
+    }
+
+    .menu {
+        height: 150px;
+        width: 150px;
+    }
+
+    .logo {
+        width: 160px;
+        height: 150px;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+    .btn-flotante {
+        display: block;
+        padding: 2px;
+        font-size: 2em;
+    }
+
+    .botones {
+        height: 150px;
+        width: 150px;
+    }
+
+    .inicio {
+        font-size: 1.4em;
+        width: 120px;
+        height: 35px;
+    }
+
+    .nav {
+        width: 250px;
+        padding: 20px;
+        gap: 0.4em;
+    }
+
+    .nav-list {
+        gap: 0.4em;
+    }
+
+    .nav-list li a {
+        font-size: 2em;
+    }
+
+    .categ {
+        margin: 20;
+        padding: 5px 10px;
+        flex-direction: column;
+        height: auto;
+        gap: 0.5em;
+    }
+
+    .categ select {
+        font-size: 1.5em;
+    }
+
+    .categ input {
+        width: auto;
+        padding: 5px 10px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 30px;
+        gap: 0.8em;
+    }
+
+    .panaderia, .pasteleria, .tostados, .galleteria {
+        width: auto;
+        height: 200px;
+    }
+    
+    .img-panaderia, .img-pasteleria, .img-tostados, .img-galleteria {
+        width: 200px;
+    }
+
+    .panaderia i, .pasteleria i, .tostados i, .galleteria i {
+        font-size: 1.5em;
+    }
+    
+    .panaderia section, .pasteleria section, .tostados section, .galleteria section {
+        margin: 5px;
+        float: right;
+    }
+    
+    .panaderia p, .pasteleria p, .tostados p, .galleteria p {
+        font-size: 0.8em;
+    }
+    
+    .panaderia h2, .panaderia h4, .pasteleria h4, .pasteleria h2, .tostados h2, .tostados h4, .galleteria h2, .galleteria h4 {
+        font-size: 1.5em;
+    }
+    
+    .panaderia button, .pasteleria button, .tostados button, .galleteria button {
+        font-size: 1.2em;
+        width: 80px;
+        height: 25px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .direccion, footer .horario, footer .contacto {
+        width: 160px;
+        height: auto;
+        text-align: center;
+    }
+    
+    footer p, a {
+        font-size: 0.8em;
+    }
+
+    footer h4 {
+        font-size: 1em;
+    }
+
+    .redes {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .btn-flotante {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .btn-flotante {
+        display: block;
+    }
+}

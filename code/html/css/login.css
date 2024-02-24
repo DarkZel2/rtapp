@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    top: 0;
+}
+
+.xi {
+    float: left;
+    width: 50%;
+}
+
+.salir {
+    font-family: 'Caveat Brush';
+    font-size: 3em;
+    margin: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: all 200ms ease 0ms;
+}
+
+.salir:hover {
+    color: #F90303;
+}
+
+.iniciar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 3em;
+    float: left;
+}
+
+.iniciar header {
+    font-size: 2em;
+    font-family: 'Caveat Brush';
+}
+
+.iniciar main label {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.8em;
+    display: inline-block;
+    padding: 30px 0px 5px 0px;
+}
+
+.iniciar main input {
+    border: none;
+    background-color: #FFF6A9;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'Caveat Brush';
+}
+
+.btn {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 10px 5px 10px;
+}
+
+.btn button {
+    background-color: #F5E62D;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    font-size: 2.5em;
+    font-family: 'Caveat Brush';
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.25);
+    transition: all 300ms ease 0ms;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+.iniciar footer ul{
+    font-size: 1em;
+    list-style-type: none;
+    color: #5E5E5E;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.iniciar footer ul li {
+    text-align: center;
+}
+
+.R {
+    display: inline-block;
+    padding: 10px 0px 60px 0px;
+    font-size: 1.5em;
+}
+
+.iniciar footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #5E5E5E;
+    transition: all 200ms ease 0ms;
+}
+
+.iniciar footer a:hover {
+    color: #000;
+}
+
+.registro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 3em;
+    float: right;
+}
+
+.xr {
+    float: right;
+    width: 50%;
+}
+
+.registro header {
+    font-size: 2em;
+    font-family: 'Caveat Brush';
+}
+
+.registro main label {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.8em;
+    display: inline-block;
+    padding: 30px 0px 5px 0px;
+}
+
+.registro main input {
+    border: none;
+    background-color: #FFF6A9;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 0px 5px;
+    font-family: 'Caveat Brush';
+}
+
+.registro footer {
+    font-size: 1em;
+    color: #5E5E5E;
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+}
+
+.registro footer a {
+    text-decoration: none;
+    color: #5E5E5E;
+    transition: all 200ms ease 0ms;
+    cursor: pointer;
+}
+
+.registro footer a:hover {
+    color: #000;
+}
+
+.info {
+    width: 50%;
+    height: 100%;
+    background-color: #FFF14F;
+    position: fixed;
+    right: 0;
+    padding: 40px;
+    transition: all 400ms ease 0ms;
+}
+
+.info.moved {
+    transform: translateX(-100%);
+}
+
+.info h4 {
+    font-family: 'Caveat Brush';
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.info p {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.5em;
+    color: #5E5E5E;
+    line-height: 1.2em;
+}
+
+.info a {
+    text-decoration: none;
+    color: #5E5E5E;
+    transition: all 220ms ease 0ms;
+}
+
+.info a:hover {
+    color: #000;
+}
+
+.conten1.invisible {
+    display: none;
+}
+
+.conten2 {
+    display: none;
+}
+
+.conten2.ver {
+    display: block;
+}
+
+
+
+
