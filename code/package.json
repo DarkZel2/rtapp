@@ -4,7 +4,7 @@
   "description": "Api for interacting with the DB rtapp",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node server.js"
   },
   "author": "Yohan Andres Sanchez",
   "license": "ISC",
