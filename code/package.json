@@ -1,21 +1,17 @@
 {
   "name": "rtapp",
   "version": "1.0.0",
-  "description": "Api for interacting with the DB rtapp",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Yohan Andres Sanchez",
+  "author": "",
   "license": "ISC",
-  "dependecies": {
-    "body-parser": "^2.20.2",
+  "dependencies": {
     "express": "^4.18.2",
-    "nodemon": "^3.0.3",
-    "mongoose": "^8.1.2",
-    "node": "^21.6.2"
-  },
-  "devDependencies": {
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.2.0",
     "nodemon": "^3.1.0"
   }
 }

@@ -1,6 +1,9 @@
-const mongoose = require("Mongoose");
+const mongoose = require("mongoose");
 const DB_URL = 'mongodb+srv://sartunduaga:0369@cluster0.avxkuvc.mongodb.net/cluster0?retryWrites=true&w=majority&appName=Cluster0'
-
+const path = require('path')
+ if (path) {
+    console.log('init')
+ }
 const connect = () => {
     mongoose.connect(
         DB_URL,
