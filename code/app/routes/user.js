@@ -6,7 +6,7 @@ const path = 'user'
  * Ruta: /user GET
  */
 router.get(
-    `/${path}`,
+    `/code/app/routes/user.js${path}`,
     controller.getData
 )
 

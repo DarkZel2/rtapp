@@ -10,4 +10,4 @@ app.listen(port, () => {
     console.log('La pagina funciona')
 })
 
-Initdb(client.run);
+Initdb();
