@@ -1,24 +1,25 @@
-const mongoose = require("mongoose");
-const DB_URL = 'mongodb+srv://sartunduaga:0369@cluster0.avxkuvc.mongodb.net/cluster0?retryWrites=true&w=majority&appName=Cluster0'
-const path = require('path')
- if (path) {
-    console.log('init')
- }
-const connect = () => {
-    mongoose.connect(
-        DB_URL,
-        {
-            keepAlive: true,
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        },
-        (err) => {
-            if(err){
-                console.log('DB connection error')
-            }else{
-                console.log('Connection established') 
-            }
-        }
-    )
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = 'mongodb+srv://sartunduaga:0369@cluster0.avxkuvc.mongodb.net/cluster0?retryWrites=true&w=majority&appName=Cluster0';
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+async function run() {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
 }
-module.exports = connect 
+run().catch(console.dir);
+
+module.exports = client;
