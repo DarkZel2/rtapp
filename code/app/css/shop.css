@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+header {
+    margin: 30px;
+}
+
+.menu {
+    height: 200px;
+    width: 220px;
+    float: left;
+    display: flex;
+    align-items: start;
+}
+
+.logo {
+    width: 280px;
+    height: 200px;
+}
+/*Configuracion del menu lateral*/
+.abrir-menu, .cerrar-menu {
+    border: 0;
+    background-color: transparent;
+    font-size: 2.5em;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: start;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: #FFF6A9;
+    padding: 30px;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+    gap: 1em;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5em;
+    font-family: 'Caveat Brush';
+}
+
+.nav-list li a:hover {
+    background-color: #f4ea8f;
+}
+/*Div y configuracion de los botones carrito y sesion*/
+.botones {
+    height: 200px;
+    width: 220px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio {
+    background-color: #F5E62D;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush';
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
+}
+
+.inicio:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
