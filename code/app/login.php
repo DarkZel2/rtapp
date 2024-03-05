@@ -8,6 +8,9 @@
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
+    <?php
+    include ('./models/insert.php')
+    ?>
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.html" class="salir">X</a>
         
