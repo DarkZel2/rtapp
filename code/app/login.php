@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include ('./models/insert.php')
+    include ('./models/registro.php')
     ?>
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.html" class="salir">X</a>
@@ -52,23 +52,23 @@
             <form action="">
                 <div>
                     <label for="">Nombre:</label><br>
-                    <input type="text">
+                    <input type="text" <?php $name ?>>
                 </div>
                 <div>
                     <label for="">Apellido:</label><br>
-                    <input type="text">
+                    <input type="text" $lastname>
                 </div>
                 <div>
                     <label for="">Telefono:</label><br>
-                    <input type="tel">
+                    <input type="tel" $phone>
                 </div>
                 <div>
                     <label for="">Correo:</label><br>
-                    <input type="email">
+                    <input type="email" $mail>
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password">
+                    <input type="password" $pass>
                 </div>
                 <div class="btn">
                     <button type="submit">Inlog</button>
