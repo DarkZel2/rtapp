@@ -8,9 +8,6 @@
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
-    <?php
-    include ('./models/registro.php')
-    ?>
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.html" class="salir">X</a>
         
@@ -49,26 +46,26 @@
             <h1>Registro</h1>
         </header>
         <main>
-            <form action="">
+            <form action="./models/registro.php" method="post">
                 <div>
                     <label for="">Nombre:</label><br>
-                    <input type="text" <?php $name ?>>
+                    <input type="text" name="nombre">
                 </div>
                 <div>
                     <label for="">Apellido:</label><br>
-                    <input type="text" $lastname>
+                    <input type="text" name="apellido">
                 </div>
                 <div>
                     <label for="">Telefono:</label><br>
-                    <input type="tel" $phone>
+                    <input type="tel" name="telefono">
                 </div>
                 <div>
                     <label for="">Correo:</label><br>
-                    <input type="email" $mail>
+                    <input type="email" name="correo">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password" $pass>
+                    <input type="password" name="contraseña">
                 </div>
                 <div class="btn">
                     <button type="submit">Inlog</button>
