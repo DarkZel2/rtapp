@@ -1,3 +1,6 @@
+<?php
+include ('./models/conection.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,21 +12,21 @@
 </head>
 <body>
     <header class="xi"> <!--Equis para salir del apartado de login-->
-        <a href="index.html" class="salir">X</a>
+        <a href="index.php" class="salir">X</a>
         
     </header>
     <header class="xr">
-        <a href="index.html" class="salir">X</a>
+        <a href="index.php" class="salir">X</a>
     </header>
     <main class="iniciar"> <!--Main para inicio de sesion-->
         <header>
             <h1>Inicia Sesión</h1>
         </header>
         <main>
-            <form action="">
+            <form action="./models/registro.php" method="POST">
                 <div>
                     <label for="">Email:</label><br>
-                    <input type="email" name="correo" id="">
+                    <input type="email" name="mail" id="">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
@@ -36,7 +39,7 @@
         </main>
         <footer>
             <ul>
-                <li class="R"><a href="reset_pass.html">Reestablecer contraseña</a></li>
+                <li class="R"><a href="reset_pass.php">Reestablecer contraseña</a></li>
                 <li>¿No tienes cuenta? <br><a id="registro">Regístrate</a></li>
             </ul>
         </footer>
@@ -57,7 +60,7 @@
                 </div>
                 <div>
                     <label for="">Telefono:</label><br>
-                    <input type="tel" name="telefono">
+                    <input type="text" name="telefono">
                 </div>
                 <div>
                     <label for="">Correo:</label><br>

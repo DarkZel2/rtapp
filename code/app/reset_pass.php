@@ -17,7 +17,7 @@
         </form>
         <a href="">Enviar de nuevo</a>
         <footer>
-            <a href="login.html"><</a>
+            <a href="login.php"><</a>
             <button>Continuar</button>
         </footer>
     </div>

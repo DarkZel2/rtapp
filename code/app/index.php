@@ -19,18 +19,18 @@
                 <nav class="nav" id="nav">
                     <button id="cerrar" class="cerrar-menu"><i class="bi bi-list"></i></button>
                     <ul class="nav-list">
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.php">Inicio</a></li>
                         <li><a href="">Notificaciones</a></li>
                         <li><a href="">Descuentos</a></li>
                         <li><a href="">Historial</a></li>
-                        <li><a href="shops.html">Mis compras</a></li>
+                        <li><a href="shops.php">Mis compras</a></li>
                     </ul>
                 </nav>
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
-                <a href="shopping_cart.html"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
-                <a href="login.html"><button class="inicio">Inicia Sesión</button></a>
+                <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
+                <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
             </div>
         </center>
     </header>        

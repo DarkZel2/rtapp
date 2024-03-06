@@ -1,7 +1,12 @@
 <?php
 
-include ('../routes/consola.php')
+function connection() {
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $db = "rtapp";
 
-$connect = 'mysql_connect("localhost","root","","rtapp")';
-
-?>
+    $connect = mysqli_connect($host, $user, $password);
+    mysqli_select_db($connect, $db);
+    return $connect;
+}
