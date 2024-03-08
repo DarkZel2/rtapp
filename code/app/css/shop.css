@@ -5,8 +5,11 @@
     font-family: "Caveat Brush", cursive;
     font-weight: 400;
     font-style: normal;
-      
 }
+body{
+    overflow: hidden
+}
+
 header {
     margin: 30px;
 }
@@ -101,4 +104,10 @@ header {
     background-color: #F90303;
     color: #ffffff;
     transform: translateY(-7px);
+}
+.carro-compras{
+    width: 1000px;
+    height: 1000px;
+    overflow: auto;
+    max-height: 400px;
 }
