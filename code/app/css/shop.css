@@ -6,9 +6,7 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
-    overflow: hidden
-}
+
 
 header {
     margin: 30px;
@@ -110,4 +108,34 @@ header {
     height: 1000px;
     overflow: auto;
     max-height: 400px;
+}
+.back-button {
+    position: relative;
+    font-size: 3em;
+    margin: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: all 200ms ease 0ms;
+    background: none;
+}
+
+.btn-pagar{
+    background-color: #F5E62D;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush';
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
+}
+
+.btn-pagar:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
 }
