@@ -35,8 +35,8 @@
         </center>
     </header>        
     <nav class="categ"> <!--Barra de categorias y buscador-->
-        <select name="categ" id="categ">
-            <option value="todos">Todas las categorías </option>
+        <select name="categ">
+            <option value="Todos" id="All">Todas las categorías </option>
             <option value="Tostados">Tostados</option>
             <option value="Pastelería">Pastelería</option>
             <option value="Panadería">Panadería</option>
@@ -45,7 +45,7 @@
         <input type="search" name="buscador" id="buscador" placeholder="Buscar">         
     </nav>
     <main> <!--Main principal donde estan los productos-->
-        <article class="panaderia">
+        <article class="panaderia" id="panaderia">
             <img src="img/Croissant.png" class="img-panaderia">
             <section>
                 <header class="head-art">
@@ -136,5 +136,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/categorias.js"></script>
 </body>
 </html>

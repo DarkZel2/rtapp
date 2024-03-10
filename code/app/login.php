@@ -26,11 +26,11 @@ include ('./models/conection.php');
             <form action="./models/registro.php" method="POST">
                 <div>
                     <label for="">Email:</label><br>
-                    <input type="email" name="mail" id="">
+                    <input type="email" name="mail">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password" name="pass" id="">
+                    <input type="password" name="pass">
                 </div>
                 <div class="btn">
                     <button type="submit">Login</button>
