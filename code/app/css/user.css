@@ -50,9 +50,10 @@
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     bottom: 30px;
     position: inherit;
+    flex-direction: row;
 }
 
 footer i {
@@ -80,7 +81,22 @@ footer button:hover {
     transform: translateY(-7px);
 }
 
-.general{
+.general {
+    right: 0;
+    top: 0;
+    width: 75%;
+    position: absolute;
+    display: none;
+    padding: 15px;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.general.invisible {
+    display: none;
+}
+
+.datos {
     right: 0;
     top: 0;
     width: 75%;
@@ -88,8 +104,63 @@ footer button:hover {
     display: flex;
     padding: 15px;
     flex-direction: column;
+    z-index: 1;
 }
 
-.general section {
+.datos.invisible {
+    display: none;
+}
+
+.datos h2 {
+    font-family: 'Caveat Brush';
+    font-size: 2.5em;
+}
+
+.search-pass {
     display: block;
 }
+
+.search-pass.invisible {
+    display: none;
+}
+
+.search-pass form label {
+    font-size: 1.5em;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.input-c {
+    font-family: 'Caveat Brush';
+    font-size: 1.5em;
+    background-color: #FFF6A9;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+}
+
+.btn-c {
+    background-color: #F5E62D;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush';
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
+}
+
+.btn-c:hover {
+    background-color: #F90303;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+.domicilio {
+    z-index: 3;
+}
+

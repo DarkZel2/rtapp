@@ -23,7 +23,7 @@ include ('./models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
-            <form action="./models/registro.php" method="POST">
+            <form action="./models/ingreso.php" method="POST">
                 <div>
                     <label for="">Email:</label><br>
                     <input type="email" name="mail">

@@ -16,27 +16,52 @@
             <h1></h1>
         </section>
         <ul class="nav-items">
-            <li>General</li>
-            <li>Datos Personales</li>
-            <li>Domicilio</li>
-            <li>Contraseña</li>
-            <li>Privacidad</li>
+            <li><a id="g">General</a></li>
+            <li><a id="da">Datos Personales</a></li>
+            <li><a id="do">Domicilio</a></li>
+            <li><a id="c">Contraseña</a></li>
+            <li><a id="p">Privacidad</a></li>
         </ul>
         <footer>
             <i><</i>
             <button>Cerrar Sesión</button>
         </footer>
     </nav>
-    <article class="general">
+
+    <article class="general" id="general">
     <h2>General</h2>
     <section>
         <p>Modo oscuro</p>
-        <input type="hidden" name="">
+        <input type="radius" name="">
     </section>
     <section>
         <p>Tamaño de fuente</p>
         <input type="range" name="fuente" id="fuente">
     </section>
     </article>
+
+    <article class="datos invisible" id="datos">
+        <h2>Datos Personales</h2>
+        <section class="search-pass">
+            <form action="">
+                <label for="">Ingresa tu Contraseña</label>
+            <input type="p" name="id" class="input-c">
+            <input type="submit" value="Continuar" class="btn-c">
+            </form>
+        </section>
+        <section class="dates">
+            
+        </section>
+    </article>
+    <article class="domicilio" id="home">
+        <h2>Domicilio</h2>
+    </article>
+    <article class="pass" id="pass">
+
+    </article>
+    <article class="priv" id="priv">
+
+    </article>
+    <script src="js/user.js"></script>
 </body>
 </html>
