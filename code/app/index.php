@@ -29,13 +29,8 @@
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
-<<<<<<< HEAD:code/app/index.html
-                <a href="shop.html"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
-                <a href="login.html"><button class="inicio">Inicia Sesión</button></a>
-=======
-                <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
+                <a href="shop.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
                 <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
->>>>>>> 432824b2718da7761be1152ccdd77c6aea6e3b73:code/app/index.php
             </div>
         </center>
     </header>        
