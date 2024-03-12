@@ -1,5 +1,12 @@
 <?php
 include ('./models/conection.php');
+
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header('Location: http://localhost/rtapp/code/app/user.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,9 +18,11 @@ include ('./models/conection.php');
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
+
 <?php if (!empty($message)): ?>
     <p><?= $message ?></p>
 <?php endif; ?>
+
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.php" class="salir">X</a>
         

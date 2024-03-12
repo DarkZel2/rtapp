@@ -1,3 +1,24 @@
+<?php
+
+session_start();
+include ('./models/conection.php');
+include ('./models/ingreso.php');
+
+if (isset($_SESSION['user_id'])) {
+    $records = $con->prepare('SELECT user_id, user_name, user_phone, user_mail, user_pass FROM registro WHERE user_id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $users = null;
+
+    if (count($results) > 0) {
+        $users = $results;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,7 +51,11 @@
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
                 <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
-                <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
+                <?php if (!empty($users)):?>
+                <a href="login.php"><button class="inicio"><?=$users['user_name']?></button></a>
+                <?php else: ?>
+                    <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
+                <?php endif; ?>
             </div>
         </center>
     </header>        
