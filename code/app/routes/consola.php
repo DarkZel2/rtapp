@@ -4,7 +4,7 @@
  * @param  Array, Object, String $data
  * @return String
  */
-function php_console_log( $data, $comment = NULL ) {	
+function php_console_log( $data, $comment = NULL ) 
     $output='';	
     if(is_string($comment))
         $output .= "<script>console.warn( '$comment' );";
@@ -33,4 +33,3 @@ function php_console_log( $data, $comment = NULL ) {
     }
         
     echo $output;
-}

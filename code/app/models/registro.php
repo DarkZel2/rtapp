@@ -1,4 +1,5 @@
 <?php
+
 include ('./conection.php');
 $con = connection();
 
@@ -13,7 +14,8 @@ $insert = "INSERT INTO registro (user_id, user_name, user_lastname, user_phone, 
 
 $query = mysqli_query($con, $insert);
 
-if($query){
+if($query->execute()){
     Header("Location: http://localhost/rtapp/code/app/login.php");
+    $message = 'Usuario corretamente creado.';
 };
 
