@@ -52,7 +52,7 @@ if (isset($_SESSION['user_id'])) {
             <div class="botones">
                 <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
                 <?php if (!empty($users)):?>
-                <a href="login.php"><button class="inicio"><?=$users['user_name']?></button></a>
+                <a href="user.php"><button class="inicio"><?=$users['user_name']?></button></a>
                 <?php else: ?>
                     <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
                 <?php endif; ?>
