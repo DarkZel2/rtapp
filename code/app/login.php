@@ -1,12 +1,6 @@
 <?php
 include ('./models/conection.php');
 
-session_start();
-
-if (isset($_SESSION['user_id'])) {
-    header('Location: http://localhost/rtapp/code/app/user.php');
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,6 +13,7 @@ if (isset($_SESSION['user_id'])) {
 </head>
 <body>
 
+    
 <?php if (!empty($message)): ?>
     <p><?= $message ?></p>
 <?php endif; ?>
