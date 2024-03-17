@@ -50,17 +50,12 @@ if (isset($_SESSION['user_id'])) {
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
-<<<<<<< HEAD
                 <a href="shop.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
-                <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
-=======
-                <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
                 <?php if (!empty($users)):?>
                 <a href="login.php"><button class="inicio"><?=$users['user_name']?></button></a>
                 <?php else: ?>
                     <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
                 <?php endif; ?>
->>>>>>> 64ef89ba321b208100bed4aae32966ba117f2656
             </div>
         </center>
     </header>        
@@ -80,7 +75,7 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2>pan</h2>
-                    <button> <i class="bi bi-cart4"></i> </button>
+                    <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
@@ -96,7 +91,7 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2>Nombre</h2>
-                    <button class="gocar"> <i class="bi bi-cart4"></i> </button>
+                    <button class="boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
@@ -112,7 +107,7 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2>Nombre</h2>
-                    <button> <i class="bi bi-cart4"></i> </button>
+                    <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>

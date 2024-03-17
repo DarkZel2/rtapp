@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="js/shop.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
     <title>Carrito de Compras</title>
+ 
 </head>
 <body>
     <header>
@@ -33,10 +35,9 @@
                 <a href="login.html"><button class="inicio">Inicia Sesión</button></a>
             </div>
         </center>
-    </header>   
-    <div class="carro-compras">
-        <div class="header-carro">
-        </div>
+    </header> 
+      
+    <div class="carrito" id="carrito">
         <div class="carrito-items">
             <div class="carrito-item">
                 <img src="img/Croissant.png" alt="" width="200px">
@@ -101,48 +102,19 @@
         </div>
         <div class="carrito-total">
             <div class="fila">
-                <strong>Tu total</strong>
+                <strong>Tu Total</strong>
                 <span class="carrito-precio-total">
-                    $100.000
-                </span>
-            </div>
+                    $120.000,00
         </div>
     </div>
-    <div class="purchase-details">
-        <div class="carrito-item">
-           
-            <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">pan</span>
-                <div class="selector-cantidad">
-                    <i class="fa-solid fa-minus restar-cantidad"></i>
-                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                    <i class="fa-solid fa-plus  sumar-cantidad"></i>
-                </div>
-                <span class="carrito-item-precio">$25.000</span>
-            </div>
-            <span class="btn-eliminar">
-                <i class="fa-solid fa-trash"></i>
-            </span>
+            <button class="btn-pagar">Pagar </button>
         </div>
-         <strong>Tu total</strong>
-         <div class="carrito-total">
-            <div class="fila">
-                <strong>Tu total</strong>
-                <span class="carrito-precio-total">
-                    $100.000
-                </span>
-                <div class="buy-button">
-                    <button class="btn-pagar">COMPRAR</button>
-                </div>
-            </div>
-    
-    <script src="js/main.js"></script>  
     </div>
- 
+    </section>
+</body>
     <footer>
-        <a href="index.html" class="back-button"> 
+        <a href="index.php" class="back-button"> 
             <i class="fa-solid fa-angle-left"></i> 
         </a>
     </footer>
-</body>
 </html> 
