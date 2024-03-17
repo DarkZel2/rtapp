@@ -1,5 +1,6 @@
 <?php
 include ('./models/conection.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,6 +15,7 @@ include ('./models/conection.php');
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
+
     
 <?php if (!empty($message)): ?>
     <p><?= $message ?></p>

@@ -3,14 +3,13 @@
 session_start();
 
 include ('./conection.php');
-$con = connection();
 
 $mail = $_POST['correo'];
 $pass = $_POST['contraseña'];
 
 
 if (!empty($mail) && !empty($pass)) {
-    $records = $con-> prepare('SELECT user_id, user_mail, user_pass FROM registro WHERE user_mail =:email');
+    $records = $con->prepare('SELECT user_id, user_mail, user_pass FROM registro WHERE user_mail =:email');
     $records->bindParam(':email', $mail);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -19,7 +18,7 @@ if (!empty($mail) && !empty($pass)) {
 
     if (count($results) > 0 && password_verify($pass, $results['user_pass'])) {
         $_SESSION['user_id'] = $results['user_id'];
-        header('Location: ');
+        header('Location: http://localhost/rtapp/code/app/user.php');
     } else {
         $message = 'La informacion es incorrecta';
     }

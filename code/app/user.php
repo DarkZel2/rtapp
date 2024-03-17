@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/user.css">
+    <link rel="website icon" type="png" href="img/RicaTorta ACTUALIZADO.png">
     <title>Mi cuenta</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
         </ul>
         <footer>
             <i><</i>
-            <button>Cerrar Sesión</button>
+            <a href="./models/cerrar_sesion.php"><button>Cerrar Sesión</button></a>
         </footer>
     </nav>
 
