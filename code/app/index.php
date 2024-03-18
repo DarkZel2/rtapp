@@ -60,8 +60,13 @@ if (isset($_SESSION['user_id'])) {
         </center>
     </header>        
     <nav class="categ"> <!--Barra de categorias y buscador-->
+<<<<<<< Updated upstream:code/app/index.php
         <select name="categ">
             <option value="Todos" id="All">Todas las categorías </option>
+=======
+        <select name="catego" id="catego">
+            <option value="todos">Todas las categorías </option>
+>>>>>>> Stashed changes:code/app/index.html
             <option value="Tostados">Tostados</option>
             <option value="Pastelería">Pastelería</option>
             <option value="Panadería">Panadería</option>
@@ -72,19 +77,19 @@ if (isset($_SESSION['user_id'])) {
     <main> <!--Main principal donde estan los productos-->
         <article class="panaderia" id="panaderia">
             <img src="img/Croissant.png" class="img-panaderia">
-            <section>
-                <header class="head-art">
-                    <h2>Nombre</h2>
-                    <i class="bi bi-cart4"></i>
-                </header>
-                <main class="body-art">
-                    <p>Descripcion</p>
-                </main>
-                <footer class="foot-art">
-                    <h4>Precio</h4>
-                <button>COMPRAR</button> 
-                </footer>
-            </section>
+            <header class="head-art">
+                <h2>Nombre</h2>
+                <i class="bi bi-cart4"></i>
+            </header>
+            <main class="body-art">
+                <div class="descripcion">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicin Lorem ipsum dolor sit amet consectetur adipisici/p>
+                </div>
+            </main>
+            <footer class="foot-art">
+            <h4>Precio</h4>
+            <button>COMPRAR</button> 
+            </footer>
         </article>
         <article class="pasteleria">
             <img src="" class="img-pasteleria">

@@ -128,7 +128,7 @@ header {
     height: 60px;
     display: flex;
     padding:10px 15px;
-    border-radius: 10px;
+    border-radius:10px;
     justify-content: space-between;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
 }
@@ -136,7 +136,7 @@ header {
 .categ select {
     background-color: #FFF14F;
     border: none;
-    border-radius: 10px;
+    border-radius:10px;
     padding: 0 15px;
     font-size: 2em;
     float: left;
@@ -145,7 +145,6 @@ header {
 }
 
 .categ input {
-    border: none;
     border-radius: 10px;
     padding: 10px 15px;
     width: 300px;
@@ -156,9 +155,18 @@ header {
 /*Main y productos por categoria*/
 main {
     height: auto;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     margin: 40px;
+}
+
+.body-art p{
+    max-height:20% ;
+}
+
+.pqnq footer{
+    position: absolute;
 }
 
 .head-art {
@@ -178,6 +186,7 @@ main {
     flex-direction: row;
     height: auto;
     background-color: transparent;
+
 }
 
 .panaderia, .pasteleria, .tostados, .galleteria {
@@ -188,6 +197,7 @@ main {
     gap: 1em;
     transition: all 300ms ease 0ms;
     border-radius: 20px;
+    max-height: 100%;
 }
 
 .panaderia:hover, .pasteleria:hover, .tostados:hover, .galleteria:hover {
@@ -209,7 +219,6 @@ main {
 
 .panaderia section, .pasteleria section, .tostados section, .galleteria section {
     margin: 10px;
-    box-sizing: border-box;
     width: 280px;
     height: 180px;
 }
