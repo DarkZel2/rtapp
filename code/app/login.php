@@ -1,5 +1,6 @@
 <?php
-include ('./models/conection.php');
+include ('models/conection.php');
+
 
 ?>
 <!DOCTYPE html>
@@ -33,14 +34,18 @@ include ('./models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
+<<<<<<< Updated upstream
             <form action="models/ingreso.php" method="POST">
+=======
+            <form action="login.php" method="POST">
+>>>>>>> Stashed changes
                 <div>
                     <label for="">Email:</label><br>
-                    <input type="email" name="mail">
+                    <input type="email" name="<?php $emailI ?>">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password" name="pass">
+                    <input type="password" name="<?php $passI ?>">
                 </div>
                 <div class="btn">
                     <button type="submit">Login</button>

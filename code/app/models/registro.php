@@ -14,11 +14,10 @@ if (!empty($name) && !empty($lastname) && !empty($mail) && !empty($pass)) {
     $query = $con->prepare($insert);
 
     if($query->execute()){
-    $message = 'Usuario corretamente creado.';
+        header('Location: http://localhost/rtapp/code/app/login.php');
     } else {
-        $message = 'Hubo un problema con la creacion de tu usuario, vuelve a intentar'
+        $message = 'Hubo un problema con la creacion de tu usuario, vuelve a intentar';
     }
-
 }
 
 
