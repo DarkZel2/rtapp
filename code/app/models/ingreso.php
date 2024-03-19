@@ -2,15 +2,10 @@
 
 session_start();
 
-include ('./conection.php');
+include ('conection.php');
 
-$mail = $_POST['correo'];
-$pass = $_POST['contraseña'];
-
-
-if (!empty($mail) && !empty($pass)) {
-    $records = $con->prepare('SELECT user_id, user_mail, user_pass FROM registro WHERE user_mail =:email');
-    $records->bindParam(':email', $mail);
+if (!empty($mail = $_POST['correo']) && !empty($pass = $_POST['contraseña'])) {
+    $records = $con->prepare("SELECT user_id, user_mail, user_pass FROM registro WHERE user_mail = $mail");
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
 

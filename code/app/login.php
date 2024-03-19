@@ -33,7 +33,7 @@ include ('./models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
-            <form action="./models/ingreso.php" method="POST">
+            <form action="models/ingreso.php" method="POST">
                 <div>
                     <label for="">Email:</label><br>
                     <input type="email" name="mail">
@@ -59,7 +59,7 @@ include ('./models/conection.php');
             <h1>Registro</h1>
         </header>
         <main>
-            <form action="./models/registro.php" method="post">
+            <form action="models/registro.php" method="post">
                 <div>
                     <label for="">Nombre:</label><br>
                     <input type="text" name="nombre">
