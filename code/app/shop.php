@@ -32,11 +32,15 @@
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
-                <a href="login.html"><button class="inicio">Inicia Sesión</button></a>
+            <?php if (!empty($users)):?>
+                <a href="user.php"><button class="inicio"><?=$users['user_name']?></button></a>
+                <?php else: ?>
+                    <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
+                <?php endif; ?>
             </div>
         </center>
     </header> 
-      
+    
     <div class="carrito" id="carrito">
         <div class="carrito-items">
             <div class="carrito-item">
