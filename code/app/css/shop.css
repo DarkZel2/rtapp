@@ -19,6 +19,7 @@ header {
     float: left;
     display: flex;
     align-items: start;
+    flex-direction: column;
 }
 
 /*Configuracion del menu lateral*/
@@ -77,8 +78,6 @@ header {
     width: 220px;
     float: right;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .inicio {
@@ -93,6 +92,7 @@ header {
     font-family: 'Caveat Brush';
     cursor: pointer;
     transition: all 300ms ease 0ms;
+    z-index: 10;
 }
 
 .inicio:hover {
@@ -101,7 +101,7 @@ header {
     transform: translateY(-7px);
 }
 
-.carrito{
+.carrito {
     max-height: 400px;
     overflow: auto;
     margin-bottom: auto;

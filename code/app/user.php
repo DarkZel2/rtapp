@@ -25,7 +25,7 @@
             <li><a id="p">Privacidad</a></li>
         </ul>
         <footer>
-            <i><</i>
+            <a href="index.php"><i><</i></a>
             <a href="./models/cerrar_sesion.php"><button>Cerrar Sesión</button></a>
         </footer>
     </nav>

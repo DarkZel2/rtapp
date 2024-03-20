@@ -1,3 +1,23 @@
+<?php
+
+session_start();
+include ('./models/conection.php');
+
+if (isset($_SESSION['user_id'])) {
+    $records = $con->prepare('SELECT user_id, user_name, user_phone, user_mail, user_pass FROM registro WHERE user_id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $users = null;
+
+    if (count($results) > 0) {
+        $users = $results;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,7 +32,6 @@
     <script src="js/shop.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
     <title>Carrito de Compras</title>
- 
 </head>
 <body>
     <header>
@@ -32,11 +51,15 @@
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png"  width="100">
             <div class="botones">
-                <a href="login.html"><button class="inicio">Inicia Sesión</button></a>
+            <?php if (!empty($users)):?>
+                <a href="user.php"><button class="inicio"><?=$users['user_name']?></button></a>
+                <?php else: ?>
+                    <a href="login.php"><button class="inicio">Inicia Sesión</button></a>
+                <?php endif; ?>
             </div>
         </center>
     </header> 
-      
+    
     <div class="carrito" id="carrito">
         <div class="carrito-items">
             <div class="carrito-item">

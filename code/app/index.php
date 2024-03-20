@@ -2,7 +2,6 @@
 
 session_start();
 include ('./models/conection.php');
-include ('./models/ingreso.php');
 
 if (isset($_SESSION['user_id'])) {
     $records = $con->prepare('SELECT user_id, user_name, user_phone, user_mail, user_pass FROM registro WHERE user_id = :id');

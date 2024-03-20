@@ -1,5 +1,6 @@
 <?php
-include ('./models/conection.php');
+include ('models/conection.php');
+
 
 ?>
 <!DOCTYPE html>
@@ -16,11 +17,6 @@ include ('./models/conection.php');
 </head>
 <body>
 
-    
-<?php if (!empty($message)): ?>
-    <p><?= $message ?></p>
-<?php endif; ?>
-
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.php" class="salir">X</a>
         
@@ -33,10 +29,14 @@ include ('./models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
-            <form action="./models/ingreso.php" method="POST">
+
+            <form action="models/ingreso.php" method="POST">
+
+            <form action="login.php" method="POST">
+
                 <div>
                     <label for="">Email:</label><br>
-                    <input type="email" name="mail">
+                    <input type="email" name="correo">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
@@ -59,7 +59,7 @@ include ('./models/conection.php');
             <h1>Registro</h1>
         </header>
         <main>
-            <form action="./models/registro.php" method="post">
+            <form action="models/registro.php" method="post">
                 <div>
                     <label for="">Nombre:</label><br>
                     <input type="text" name="nombre">
