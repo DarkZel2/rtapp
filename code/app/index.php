@@ -50,7 +50,7 @@ if (isset($_SESSION['user_id'])) {
             </div>
             <img src="img/RicaTorta ACTUALIZADO.png" class="logo">
             <div class="botones">
-                <a href="shopping_cart.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
+                <a href="shop.php"><button class="carrito"><i class="bi bi-cart4"></i></button></a>
                 <?php if (!empty($users)):?>
                 <a href="user.php"><button class="inicio"><?=$users['user_name']?></button></a>
                 <?php else: ?>
@@ -77,6 +77,7 @@ if (isset($_SESSION['user_id'])) {
     <main> <!--Main principal donde estan los productos-->
         <article class="panaderia" id="panaderia">
             <img src="img/Croissant.png" class="img-panaderia">
+<<<<<<< HEAD
             <header class="head-art">
                 <h2>Nombre</h2>
                 <i class="bi bi-cart4"></i>
@@ -90,13 +91,28 @@ if (isset($_SESSION['user_id'])) {
             <h4>Precio</h4>
             <button>COMPRAR</button> 
             </footer>
+=======
+            <section>
+                <header class="head-art">
+                    <h2>pan</h2>
+                    <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
+                </header>
+                <main class="body-art">
+                    <p>Descripcion</p>
+                </main>
+                <footer class="foot-art">
+                    <h4>Precio</h4>
+                <button>COMPRAR</button> 
+                </footer>
+            </section>
+>>>>>>> 05fafc6a730c403a64b9aa38f4088eeeb52c8129
         </article>
         <article class="pasteleria">
             <img src="" class="img-pasteleria">
             <section>
                 <header class="head-art">
                     <h2>Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
@@ -112,7 +128,7 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2>Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
@@ -128,7 +144,7 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2>Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
