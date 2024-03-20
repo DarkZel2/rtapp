@@ -17,6 +17,7 @@ header {
     float: left;
     display: flex;
     align-items: start;
+    z-index: 10;
 }
 
 .logo {
