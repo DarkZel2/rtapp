@@ -16,6 +16,7 @@ include ('models/conection.php');
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
+
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.php" class="salir">X</a>
         
@@ -28,15 +29,18 @@ include ('models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
+
             <form action="models/ingreso.php" method="POST">
+
             <form action="login.php" method="POST">
+
                 <div>
                     <label for="">Email:</label><br>
-                    <input type="email" name="<?php $emailI ?>">
+                    <input type="email" name="correo">
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password" name="<?php $passI ?>">
+                    <input type="password" name="pass">
                 </div>
                 <div class="btn">
                     <button type="submit">Login</button>
