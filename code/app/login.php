@@ -16,12 +16,6 @@ include ('models/conection.php');
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
-
-    
-<?php if (!empty($message)): ?>
-    <p><?= $message ?></p>
-<?php endif; ?>
-
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.php" class="salir">X</a>
         
@@ -34,11 +28,8 @@ include ('models/conection.php');
             <h1>Inicia Sesión</h1>
         </header>
         <main>
-<<<<<<< Updated upstream
             <form action="models/ingreso.php" method="POST">
-=======
             <form action="login.php" method="POST">
->>>>>>> Stashed changes
                 <div>
                     <label for="">Email:</label><br>
                     <input type="email" name="<?php $emailI ?>">
