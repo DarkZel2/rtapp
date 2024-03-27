@@ -13,6 +13,7 @@ include ('models/conection.php');
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
@@ -43,10 +44,11 @@ include ('models/conection.php');
                     <label for="">Email:</label><br>
                     <input type="email" name="correo">
                 </div>
-                <div>
-                    <label for="">Contraseña:</label><br>
-                    <input type="password" name="pass">
-                </div>
+                <label for="">Contraseña:</label>
+                    <div class="container">
+                        <input type="password" name="pass" id="pass">
+                        <i class="bi bi-eye" id="icon"></i>
+                    </div>
                 <div class="btn">
                     <button type="submit">Login</button>
                 </div>
@@ -83,7 +85,10 @@ include ('models/conection.php');
                 </div>
                 <div>
                     <label for="">Contraseña:</label><br>
-                    <input type="password" name="contraseña">
+                    <div class="container">
+                        <input type="password" name="pass" id="pass2">
+                        <i class="bi bi-eye" id="icon2"></i>
+                    </div>
                 </div>
                 <div class="btn">
                     <button type="submit">Inlog</button>
@@ -108,5 +113,6 @@ include ('models/conection.php');
         </div>
     </div>
     <script src="js/login.js"></script>
+    <script src="js/ver_pass.js"></script>
 </body>
 </html>
