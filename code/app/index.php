@@ -61,10 +61,10 @@ if (isset($_SESSION['user_id'])) {
     <nav class="categ"> <!--Barra de categorias y buscador-->
         <select name="catego" id="catego">
             <option value="todos">Todas las categorías </option>
-            <option value="Tostados">Tostados</option>
-            <option value="Pastelería">Pastelería</option>
-            <option value="Panadería">Panadería</option>
-            <option value="Galletería">Galletería</option>
+            <option value="tostados">Tostados</option>
+            <option value="pasteleria">Pastelería</option>
+            <option value="panaderia">Panadería</option>
+            <option value="galleteria">Galletería</option>
         </select>
         <input type="search" name="buscador" id="buscador" placeholder="Buscar">         
     </nav>
@@ -85,7 +85,7 @@ if (isset($_SESSION['user_id'])) {
                 </footer>
             </section>
         </article>
-        <article class="pasteleria">
+        <article class="pasteleria" id="pasteleria">
             <img src="" class="img-pasteleria">
             <section>
                 <header class="head-art">
@@ -101,7 +101,7 @@ if (isset($_SESSION['user_id'])) {
                 </footer>
             </section>
         </article>
-        <article class="tostados">
+        <article class="tostados" id="tostados">
             <img src="" class="img-tostados">
             <section>
                 <header class="head-art">
@@ -117,7 +117,7 @@ if (isset($_SESSION['user_id'])) {
                 </footer>
             </section>
         </article>
-        <article class="galleteria">
+        <article class="galleteria" id="galleteria">
             <img src="" class="img-galleteria">
             <section>
                 <header class="head-art">
@@ -161,5 +161,6 @@ if (isset($_SESSION['user_id'])) {
     </footer>
     <script src="js/main.js"></script>
     <script src="js/categorias.js"></script>
+    <script src="js/filtro_categ.js"></script>
 </body>
 </html>
