@@ -1,7 +1,6 @@
 <?php
 include ('models/conection.php');
 
-
 ?>
 <!DOCTYPE html>
 <html lang="es">

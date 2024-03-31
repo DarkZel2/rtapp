@@ -7,6 +7,11 @@
     
 }
 
+.usuario h1 {
+    font-family: 'Caveat Brush';
+    font-size: 2em;
+}
+
 .usuario i {
     font-size: 4em;
     display: block;
@@ -50,7 +55,6 @@
 
 footer {
     display: flex;
-    justify-content: space-between;
     bottom: 30px;
     position: inherit;
     flex-direction: row;
@@ -59,6 +63,8 @@ footer {
 footer i {
     font-size: 2em;
     font-family: 'Caveat Brush';
+    text-decoration: none;
+    color: #000;
 }
 
 footer button {
@@ -66,6 +72,7 @@ footer button {
     border: none;
     width: 150px;
     height: 50px;
+    right: 0;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
     color: #000;
