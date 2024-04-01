@@ -14,9 +14,9 @@ if (!empty($name) && !empty($lastname) && !empty($mail) && !empty($pass)) {
     $query = $con->prepare($insert);
 
     if($query->execute()){
-        header('Location: http://localhost/rtapp/code/app/login.php');
-        echo '<script language="javascript">alert("Usuario creado");</script>';
+        echo '<script>alert("Usuario creado");</script>';
+        echo '<script>window.location.href = "http://localhost/rtapp/code/app/login.php"</script>';
     } else {
-        echo '<script language="javascript">alert("Hubo un problema, vuelve a intentar");</script>';
+        echo '<script>alert("Hubo un problema, vuelve a intentar");</script>';
     }
 }

@@ -19,35 +19,35 @@ text1.addEventListener('click', () => {
 })
 
 text2.addEventListener('click', () => {
-    general.classList.add('invisible');
     datos.classList.remove('invisible');
+    general.classList.add('invisible');
     house.classList.add('invisible');
     pass.classList.add('invisible');
     priv.classList.add('invisible');
 })
 
 text3.addEventListener('click', () => {
+    house.classList.remove('invisible');
     general.classList.add('invisible');
     datos.classList.add('invisible');
-    house.classList.remove('invisible');
     pass.classList.add('invisible');
     priv.classList.add('invisible');
 })
 
 text4.addEventListener('click', () => {
+    pass.classList.remove('invisible');
     general.classList.add('invisible');
     datos.classList.add('invisible');
     house.classList.add('invisible');
-    pass.classList.remove('invisible');
     priv.classList.add('invisible');
 })
 
 text5.addEventListener('click', () => {
+    priv.classList.remove('invisible');
     general.classList.add('invisible');
     datos.classList.add('invisible');
     house.classList.add('invisible');
     pass.classList.add('invisible');
-    priv.classList.remove('invisible');
 })
 
 

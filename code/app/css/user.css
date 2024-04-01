@@ -40,6 +40,9 @@
     padding-top: 20px;
 }
 
+.nav-items a {
+}
+
 .nav-items a li {
     display: block;
     cursor: pointer;
@@ -47,7 +50,6 @@
     font-family: 'Caveat Brush';
     font-size: 2em;
     left: 0;
-    text-decoration: none;
 }
 
 .nav-items a li:hover {

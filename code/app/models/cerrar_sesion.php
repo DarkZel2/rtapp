@@ -6,4 +6,4 @@ session_unset();
 
 session_destroy();
 
-header('Location: http://localhost/rtapp/code/app/index.php');
+echo '<script>window.location.href = "http://localhost/rtapp/code/app/index.php"</script>';

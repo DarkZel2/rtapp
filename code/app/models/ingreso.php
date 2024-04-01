@@ -14,11 +14,12 @@ if (!empty($mail) && !empty($pass)) {
     if ($mail == 'admin@boss' && $pass == 'admin123') {
         header('Location: ../admin.php');
     } else {
-        if ($results) {
+        if ($results['user_mail'] == $mail && $results['user_pass'] == $pass) {
             $_SESSION['user_id'] = $results['user_id'];
-            header('Location: ../user.php');
+            echo '<script>window.location.href = "http://localhost/rtapp/code/app/user.php"</script>';
         } else {
-            $message = 'La informacion es incorrecta';
+            echo '<script>alert("Error de usuario");</script>';
+            echo '<script>window.location.href = "http://localhost/rtapp/code/app/login.php"</script>';
         }
     }
 }
