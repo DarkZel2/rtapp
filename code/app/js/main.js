@@ -24,16 +24,25 @@ function ready() {
 
 }
 
-//Funciòn que controla el boton clickeado de agregar al carrito
-function agregarAlCarritoClicked(event){
+function agregarAlCarritoClicked(event) {
     var button = event.target;
     var item = button.parentElement;
     var titulo = item.getElementsByClassName('titulo-item')[0].innerText;
     var precio = item.getElementsByClassName('precio-item')[0].innerText;
-    var imagenSrc = item.getElementsByClassName('img-panaderia', 'img-tostados', 'img-galleteria', 'img-pasteleria')[0].src;
+    var imagenSrc;
+
+    // Corrección del selector para obtener la fuente de la imagen
+    if (item.classList.contains('img-panaderia')) {
+        imagenSrc = item.getElementsByClassName('img-panaderia')[0].src;
+    } else if (item.classList.contains('img-tostados')) {
+        imagenSrc = item.getElementsByClassName('img-tostados')[0].src;
+    } else if (item.classList.contains('img-galleteria')) {
+        imagenSrc = item.getElementsByClassName('img-galleteria')[0].src;
+    } else if (item.classList.contains('img-pasteleria')) {
+        imagenSrc = item.getElementsByClassName('img-pasteleria')[0].src;
+    }
+
     console.log(imagenSrc);
-
     agregarItemAlCarrito(titulo, precio, imagenSrc);
-
     hacerVisibleCarrito();
 }
