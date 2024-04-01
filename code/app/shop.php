@@ -62,6 +62,7 @@ if (isset($_SESSION['user_id'])) {
     
     <div class="carrito" id="carrito">
         <div class="carrito-items">
+            <!-- 
             <div class="carrito-item">
                 <img src="img/Croissant.png" alt="" width="200px">
                 <div class="carrito-item-detalles">
@@ -123,6 +124,7 @@ if (isset($_SESSION['user_id'])) {
                 </span>
             </div>
         </div>
+            -->
         <div class="carrito-total">
             <div class="fila">
                 <strong>Tu Total</strong>

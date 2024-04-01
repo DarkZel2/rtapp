@@ -69,34 +69,37 @@ if (isset($_SESSION['user_id'])) {
         <input type="search" name="buscador" id="buscador" placeholder="Buscar">         
     </nav>
     <main> <!--Main principal donde estan los productos-->
-        <article class="panaderia" id="panaderia">
+        <div class="carrito-items">
+            <article class="panaderia" id="panaderia">
             <img src="img/Croissant.png" class="img-panaderia">
             <section>
                 <header class="head-art">
-                    <h2>pan</h2>
+                    <h2 class="titulo-item">pan</h2>
                     <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
-        </article>
+        </article>  
+        </div>
+    
         <article class="galleteria" id="galleteria">
             <img src="" class="img-galleteria">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -105,14 +108,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="" class="img-pasteleria">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button class="boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -121,14 +124,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="" class="img-galleteria">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -137,14 +140,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="img/Croissant.png" class="img-panaderia">
             <section>
                 <header class="head-art">
-                    <h2>pan</h2>
+                    <h2 class="titulo-item">pan</h2>
                     <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -153,14 +156,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="" class="img-tostados">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -169,14 +172,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="" class="img-galleteria">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
@@ -185,14 +188,14 @@ if (isset($_SESSION['user_id'])) {
             <img src="" class="img-tostados">
             <section>
                 <header class="head-art">
-                    <h2>Nombre</h2>
+                    <h2 class="titulo-item">Nombre</h2>
                     <button class = "boton-item"> <i class="bi bi-cart4"></i> </button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4>Precio</h4>
+                    <h4 class="precio-item">Precio</h4>
                 <button>COMPRAR</button> 
                 </footer>
             </section>
