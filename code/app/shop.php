@@ -129,7 +129,6 @@ if (isset($_SESSION['user_id'])) {
             <div class="fila">
                 <strong>Tu Total</strong>
                 <span class="carrito-precio-total">
-                    $120.000,00
         </div>
     </div>
             <button class="btn-pagar">Pagar </button>

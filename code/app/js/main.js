@@ -2,6 +2,11 @@ const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+}else{
+    ready();
+}
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
 })
