@@ -38,11 +38,11 @@ if (isset($_SESSION['user_id'])) {
             <h1><?=$users['user_name']?></h1>
         </section>
         <ul class="nav-items">
-            <li><a id="g">General</a></li>
-            <li><a id="da">Datos Personales</a></li>
-            <li><a id="do">Domicilio</a></li>
-            <li><a id="c">Contraseña</a></li>
-            <li><a id="p">Privacidad</a></li>
+            <a href="" id="1"><li>General</li></a>
+            <a href="" id="2"><li>Datos Personales</li></a>
+            <a href="" id="3"><li>Domicilio</li></a>
+            <a href="" id="4"><li>Contraseña</li></a>
+            <a href="" id="5"><li>Privacidad</li></a>
         </ul>
         <footer>
             <a href="index.php"><i><</i></a>
@@ -51,38 +51,19 @@ if (isset($_SESSION['user_id'])) {
     </nav>
 
     <article class="general" id="general">
-    <h2>General</h2>
-    <section>
-        <p>Modo oscuro</p>
-        <input type="radius" name="">
-    </section>
-    <section>
-        <p>Tamaño de fuente</p>
-        <input type="range" name="fuente" id="fuente">
-    </section>
+        <h2>General</h2>
     </article>
-
     <article class="datos invisible" id="datos">
         <h2>Datos Personales</h2>
-        <section class="search-pass">
-            <form action="">
-                <label for="">Ingresa tu Contraseña</label>
-            <input type="p" name="id" class="input-c">
-            <input type="submit" value="Continuar" class="btn-c">
-            </form>
-        </section>
-        <section class="dates">
-            
-        </section>
     </article>
-    <article class="domicilio" id="home">
+    <article class="domicilio invisible" id="home">
         <h2>Domicilio</h2>
     </article>
-    <article class="pass" id="pass">
-
+    <article class="pass invisible" id="pass">
+        <h2>Contraseña</h2>
     </article>
-    <article class="priv" id="priv">
-
+    <article class="priv invisible" id="priv">
+        <h2>Privacidad</h2>
     </article>
     <script src="js/user.js"></script>
 </body>

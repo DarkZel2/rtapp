@@ -40,16 +40,17 @@
     padding-top: 20px;
 }
 
-.nav-items li {
+.nav-items a li {
     display: block;
     cursor: pointer;
     color: #7F7826;
     font-family: 'Caveat Brush';
     font-size: 2em;
     left: 0;
+    text-decoration: none;
 }
 
-.nav-items li:hover {
+.nav-items a li:hover {
     background-color: #f4ea8f;
 }
 
@@ -93,14 +94,17 @@ footer button:hover {
     top: 0;
     width: 75%;
     position: absolute;
-    display: none;
     padding: 15px;
     flex-direction: column;
-    z-index: 0;
 }
 
 .general.invisible {
     display: none;
+}
+
+.general h2 {
+    font-family: 'Caveat Brush';
+    font-size: 2.5em;
 }
 
 .datos {
@@ -168,6 +172,58 @@ footer button:hover {
 }
 
 .domicilio {
-    z-index: 3;
+    right: 0;
+    top: 0;
+    width: 75%;
+    position: absolute;
+    padding: 15px;
+    flex-direction: column;
 }
+
+.domicilio.invisible {
+    display: none;
+}
+
+.domicilio h2 {
+    font-size: 2.5em;
+    font-family: 'Caveat Brush';
+}
+
+.pass {
+    right: 0;
+    top: 0;
+    width: 75%;
+    position: absolute;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.pass.invisible {
+    display: none;
+}
+
+.pass h2 {
+    font-family: 'Caveat Brush';
+    font-size: 2.5em;
+}
+
+.priv {
+    right: 0;
+    top: 0;
+    width: 75%;
+    position: absolute;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.priv.invisible {
+    display: none;
+}
+
+.priv h2 {
+    font-family: 'Caveat Brush';
+    font-size: 2.5em;
+}
+
+
 
