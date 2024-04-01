@@ -75,14 +75,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">pan</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                    <h4 class="precio-item">12.000</h4>
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>  
@@ -93,14 +93,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -109,14 +109,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -125,14 +125,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -141,14 +141,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">pan</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -157,14 +157,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -173,14 +173,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>
@@ -189,14 +189,14 @@ if (isset($_SESSION['user_id'])) {
             <section>
                 <header class="head-art">
                     <h2 class="titulo-item">Nombre</h2>
-                    <i class="bi bi-cart4"></i>
+                    <button class="boton-item"><i class="bi bi-cart4"></i></button>
                 </header>
                 <main class="body-art">
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
                     <h4 class="precio-item">Precio</h4>
-                <button>COMPRAR</button> 
+                <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>
         </article>

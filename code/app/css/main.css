@@ -190,6 +190,18 @@ main {
 
 }
 
+.boton-item {
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    transition: all 300ms ease 0ms;
+}
+
+.boton-item:hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
 .panaderia, .pasteleria, .tostados, .galleteria {
     width: 300px;
     height: 450px;
@@ -268,7 +280,7 @@ main {
     font-size: 1.2em;
 }
 
-.panaderia button, .pasteleria button, .tostados button, .galleteria button {
+.panaderia .comprar-btn, .pasteleria .comprar-btn, .tostados .comprar-btn, .galleteria .comprar-btn {
     border: none;
     border-radius: 10px;
     color: #000;
@@ -286,11 +298,11 @@ main {
     background-color: #B2E2F2;
 }
 
-.panaderia button {
+.panaderia .comprar-btn {
     background-color: #009BCF;
 }
 
-.panaderia button:hover {
+.panaderia .comprar-btn:hover {
     background-color: #0C556D;
     color: #ffffff;
     transform: translateY(-7px);
@@ -300,11 +312,11 @@ main {
     background-color: #FFB0B7;
 }
 
-.pasteleria button {
+.pasteleria .comprar-btn {
     background-color: #FF162A;
 }
 
-.pasteleria button:hover {
+.pasteleria .comprar-btn:hover {
     background-color: #960F1B;
     color: #ffffff;
     transform: translateY(-7px);
@@ -314,11 +326,11 @@ main {
     background-color: #FFC78D;
 }
 
-.tostados button {
+.tostados .comprar-btn {
     background-color: #FF8100;
 }
 
-.tostados button:hover {
+.tostados .comprar-btn:hover {
     background-color: #7F4305;
     color: #ffffff;
     transform: translateY(-7px);
@@ -328,11 +340,11 @@ main {
     background-color: #ABFF8D;
 }
 
-.galleteria button {
+.galleteria .comprar-btn {
     background-color: #37D200;
 }
 
-.galleteria button:hover {
+.galleteria .comprar-btn:hover {
     background-color: #175A00;
     color: #ffffff;
     transform: translateY(-7px);
