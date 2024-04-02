@@ -4,7 +4,7 @@ session_start();
 include ('./models/conection.php');
 
 if (isset($_SESSION['user_id'])) {
-    $records = $con->prepare('SELECT user_id, user_name, user_phone, user_mail, user_pass FROM registro WHERE user_id = :id');
+    $records = $con->prepare('SELECT user_id, user_name, user_lastname, user_phone, user_mail, user_pass FROM registro WHERE user_id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -15,7 +15,6 @@ if (isset($_SESSION['user_id'])) {
         $users = $results;
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -50,8 +49,24 @@ if (isset($_SESSION['user_id'])) {
         </footer>
     </nav>
 
-    <main class="general">
-        <h2>General</h2>
+    <main class="datos">
+        <h2>Datos Personales</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Correo Electrónico</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><?=$users['user_name']?></td>
+                <td><?=$users['user_lastname']?></td>
+                <td><?=$users['user_phone']?></td>
+                <td><?=$users['user_mail']?></td>
+                <td class="btn-edit"><a href="user_update.php">Editar</a></td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

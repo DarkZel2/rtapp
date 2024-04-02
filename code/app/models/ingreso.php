@@ -12,7 +12,7 @@ if (!empty($mail) && !empty($pass)) {
     $results = $records->fetch(PDO::FETCH_ASSOC);
 
     if ($mail == 'admin@boss' && $pass == 'admin123') {
-        header('Location: ../admin.php');
+        echo '<script>window.location.href = "http://localhost/rtapp/code/app/admin.php"</script>';
     } else {
         if ($results['user_mail'] == $mail && $results['user_pass'] == $pass) {
             $_SESSION['user_id'] = $results['user_id'];

@@ -50,8 +50,8 @@ if (isset($_SESSION['user_id'])) {
         </footer>
     </nav>
 
-    <main class="general">
-        <h2>General</h2>
+    <main class="domicilio">
+        <h2>Domiciliio</h2>
     </main>
 </body>
 </html>

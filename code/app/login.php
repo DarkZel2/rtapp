@@ -16,12 +16,6 @@ include ('models/conection.php');
     <title>Inicia Sesión/Registro</title>
 </head>
 <body>
-
-    
-<?php if (!empty($message)): ?>
-    <p><?= $message ?></p>
-<?php endif; ?>
-
     <header class="xi"> <!--Equis para salir del apartado de login-->
         <a href="index.php" class="salir">X</a>
         

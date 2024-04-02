@@ -41,6 +41,7 @@
 }
 
 .nav-items a {
+    text-decoration: none;
 }
 
 .nav-items a li {
@@ -100,10 +101,6 @@ footer button:hover {
     flex-direction: column;
 }
 
-.general.invisible {
-    display: none;
-}
-
 .general h2 {
     font-family: 'Caveat Brush';
     font-size: 2.5em;
@@ -120,57 +117,61 @@ footer button:hover {
     z-index: 1;
 }
 
-.datos.invisible {
-    display: none;
-}
-
 .datos h2 {
     font-family: 'Caveat Brush';
     font-size: 2.5em;
 }
 
-.search-pass {
-    display: block;
+.datos table {
+    width: 90%;
+    align-items: center;
+    border: 1px solid #5E5E5E;
+    background-color: #fffdef;
 }
 
-.search-pass.invisible {
-    display: none;
-}
-
-.search-pass form label {
+.datos th {
+    font-family: 'Caveat Brush';
     font-size: 1.5em;
+}
+
+.datos td {
     font-family: 'Droid Sans', sans-serif;
 }
 
-.input-c {
-    font-family: 'Caveat Brush';
-    font-size: 1.5em;
-    background-color: #FFF6A9;
-    border: none;
-    border-radius: 10px;
-    height: 30px;
-    width: 200px;
-    padding: 5px;
+.datos th, td {
+    width: 20%;
+    vertical-align: top;
+    border: 1px solid #5E5E5E;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0.3em;
 }
 
-.btn-c {
-    background-color: #F5E62D;
-    border: none;
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+.btn-edit {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.datos td a {
     color: #000;
-    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    background-color: #F5E62D;
     font-family: 'Caveat Brush';
-    cursor: pointer;
+    font-size: 1.2em;
+    width: 80px;
+    padding: 0.2em;
     transition: all 300ms ease 0ms;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.btn-c:hover {
-    background-color: #F90303;
+.datos td a:hover {
     color: #ffffff;
-    transform: translateY(-7px);
+    background-color: #F90303;
+    transform: translateY(-4px);
 }
 
 .domicilio {
@@ -180,10 +181,6 @@ footer button:hover {
     position: absolute;
     padding: 15px;
     flex-direction: column;
-}
-
-.domicilio.invisible {
-    display: none;
 }
 
 .domicilio h2 {
@@ -200,10 +197,6 @@ footer button:hover {
     flex-direction: column;
 }
 
-.pass.invisible {
-    display: none;
-}
-
 .pass h2 {
     font-family: 'Caveat Brush';
     font-size: 2.5em;
@@ -216,10 +209,6 @@ footer button:hover {
     position: absolute;
     padding: 15px;
     flex-direction: column;
-}
-
-.priv.invisible {
-    display: none;
 }
 
 .priv h2 {
