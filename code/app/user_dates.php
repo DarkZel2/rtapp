@@ -51,6 +51,12 @@ if (isset($_SESSION['user_id'])) {
 
     <main class="datos">
         <h2>Datos Personales</h2>
+        <form action="user_dates.php" method="POST">
+            <label for="">Ingrese su contraseña:</label>
+            <input type="password" name="verificar" class="ipt-pass">
+            <input type="submit" value="Verificar" class="btn-sub">
+        </form>
+        <?php if (!empty($_POST['verificar']) && $users['user_pass'] == $_POST['verificar']): ?>
         <table>
             <tr>
                 <th>Nombre</th>
@@ -67,6 +73,8 @@ if (isset($_SESSION['user_id'])) {
                 <td class="btn-edit"><a href="user_update.php">Editar</a></td>
             </tr>
         </table>
+        <?php else: ?>
+        <?php endif; ?>
     </main>
 </body>
 </html>

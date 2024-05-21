@@ -81,7 +81,7 @@ if (isset($_SESSION['user_id'])) {
                     <p>Descripcion</p>
                 </main>
                 <footer class="foot-art">
-                    <h4 class="precio-item">12.000</h4>
+                    <h4 class="precio-item">25.000</h4>
                 <button class="comprar-btn">COMPRAR</button> 
                 </footer>
             </section>

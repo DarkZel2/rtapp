@@ -61,8 +61,7 @@ if (isset($_SESSION['user_id'])) {
     </header> 
     
     <div class="carrito" id="carrito">
-        <div class="carrito-items">
-            <!-- 
+        <div class="carrito-items"> 
             <div class="carrito-item">
                 <img src="img/Croissant.png" alt="" width="200px">
                 <div class="carrito-item-detalles">
@@ -78,53 +77,6 @@ if (isset($_SESSION['user_id'])) {
                     <i class="fa-solid fa-trash"></i>
                 </span>
             </div>
-            <div class="carrito-item">
-                <img src="img/Croissant.png" alt="" width="200px">
-                <div class="carrito-item-detalles">
-                    <span class="carrito-item-titulo">pan</span>
-                    <div class="selector-cantidad">
-                        <i class="fa-solid fa-minus restar-cantidad"></i>
-                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                        <i class="fa-solid fa-plus  sumar-cantidad"></i>
-                    </div>
-                    <span class="carrito-item-precio">$25.000</span>
-                </div>
-                <span class="btn-eliminar">
-                    <i class="fa-solid fa-trash"></i>
-                </span>
-            </div>
-            <div class="carrito-item">
-                <img src="img/Croissant.png" alt="" width="200px">
-                <div class="carrito-item-detalles">
-                    <span class="carrito-item-titulo">pan</span>
-                    <div class="selector-cantidad">
-                        <i class="fa-solid fa-minus restar-cantidad"></i>
-                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                        <i class="fa-solid fa-plus  sumar-cantidad"></i>
-                    </div>
-                    <span class="carrito-item-precio">$25.000</span>
-                </div>
-                <span class="btn-eliminar">
-                    <i class="fa-solid fa-trash"></i>
-                </span>
-            </div>
-            <div class="carrito-item">
-                <img src="img/Croissant.png" alt="" width="200px">
-                <div class="carrito-item-detalles">
-                    <span class="carrito-item-titulo">pan</span>
-                    <div class="selector-cantidad">
-                        <i class="fa-solid fa-minus restar-cantidad"></i>
-                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                        <i class="fa-solid fa-plus  sumar-cantidad"></i>
-                    </div>
-                    <span class="carrito-item-precio">$25.000</span>
-                </div>
-                <span class="btn-eliminar">
-                    <i class="fa-solid fa-trash"></i>
-                </span>
-            </div>
-        </div>
-            -->
         <div class="carrito-total">
             <div class="fila">
                 <strong>Tu Total</strong>
